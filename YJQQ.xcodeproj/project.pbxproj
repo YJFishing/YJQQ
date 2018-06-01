@@ -117,6 +117,8 @@
 			children = (
 				39F392BB20C0382400C66FBD /* AppDelegate.h */,
 				39F392BC20C0382400C66FBD /* AppDelegate.m */,
+				39F392EE20C03A8700C66FBD /* AppDelegate+SideNavigation.h */,
+				39F392EF20C03A8700C66FBD /* AppDelegate+SideNavigation.m */,
 				39F392BE20C0382400C66FBD /* ViewController.h */,
 				39F392BF20C0382400C66FBD /* ViewController.m */,
 				39F392C120C0382500C66FBD /* Main.storyboard */,
@@ -124,8 +126,6 @@
 				39F392C620C0382600C66FBD /* LaunchScreen.storyboard */,
 				39F392C920C0382600C66FBD /* Info.plist */,
 				39F392CA20C0382600C66FBD /* main.m */,
-				39F392EE20C03A8700C66FBD /* AppDelegate+SideNavigation.h */,
-				39F392EF20C03A8700C66FBD /* AppDelegate+SideNavigation.m */,
 			);
 			path = YJQQ;
 			sourceTree = "<group>";

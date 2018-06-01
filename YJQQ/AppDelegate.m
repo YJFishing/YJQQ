@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+SideNavigation.h"
+#import "SideMenuViewController.h"
+
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) SideMenuViewController *sideMenuController;
 
 @end
 
@@ -17,6 +22,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setSideNavigationController];
+    if (@available(iOS 9,*)) {
+        [self setShortCutItem:application];
+    }
     return YES;
 }
 

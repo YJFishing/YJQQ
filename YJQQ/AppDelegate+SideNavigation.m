@@ -18,7 +18,6 @@
     YJTabBarController *rootViewController = [[YJTabBarController alloc] init];
     
     YJNavigationContentViewController *nav = [[YJNavigationContentViewController alloc]initWithMenuViewController:sideMenuController rootViewController:rootViewController];
-    
     self.window.rootViewController = nav;
 }
 
@@ -42,5 +41,14 @@
         
         application.shortcutItems = [NSArray arrayWithObjects:scanItem,addItem,chatItem,payItem, nil];
     }
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    if(!self.window.rootViewController)
+        return;
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:shortcutItem.localizedTitle preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:action];
+    [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 @end
