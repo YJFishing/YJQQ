@@ -8,6 +8,10 @@
 
 #import "YJNavigationContentViewController.h"
 
+//打开菜单后，右边留的空间
+static CGFloat space = 75;
+//打开菜单后，右边的透明度(黑色)
+static CGFloat alpha = 0.5;
 @interface YJNavigationContentViewController ()
 
 @end
@@ -29,5 +33,11 @@
     return [[YJNavigationContentViewController alloc] init];
 }
 
++ (CGFloat)getSpace {
+    return space;
+}
 
++ (CGFloat)getAlpha {
+    return alpha;
+}
 @end

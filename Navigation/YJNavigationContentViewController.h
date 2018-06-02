@@ -10,6 +10,11 @@
 #import "SideMenuViewController.h"
 #import "YJTabBarController.h"
 
+
 @interface YJNavigationContentViewController : UIViewController
+
 - (YJNavigationContentViewController *)initWithMenuViewController:(SideMenuViewController*)menuViewController rootViewController:(YJTabBarController *)rootViewController;
+
++ (CGFloat)getSpace;
++ (CGFloat)getAlpha;
 @end

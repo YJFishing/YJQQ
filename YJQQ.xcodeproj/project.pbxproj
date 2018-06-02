@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393DCFE220C2EBCA0048D92D /* YJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DCFE120C2EBCA0048D92D /* YJViewController.m */; };
+		393DCFE520C2EBE50048D92D /* YJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DCFE420C2EBE50048D92D /* YJCollectionViewController.m */; };
 		39F392BD20C0382400C66FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392BC20C0382400C66FBD /* AppDelegate.m */; };
 		39F392C020C0382400C66FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392BF20C0382400C66FBD /* ViewController.m */; };
 		39F392C320C0382500C66FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F392C120C0382500C66FBD /* Main.storyboard */; };
@@ -19,6 +21,7 @@
 		39F392F420C03EA500C66FBD /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392F320C03EA500C66FBD /* SideMenuViewController.m */; };
 		39F392F720C0415B00C66FBD /* YJNavigationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392F620C0415B00C66FBD /* YJNavigationContentViewController.m */; };
 		39F392FB20C0422C00C66FBD /* YJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392FA20C0422C00C66FBD /* YJTabBarController.m */; };
+		5CA42BC0107CD50141374DFE /* libPods-YJQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43767A75D66AC63B5EAA6B48 /* libPods-YJQQ.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		393DCFE020C2EBCA0048D92D /* YJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViewController.h; sourceTree = "<group>"; };
+		393DCFE120C2EBCA0048D92D /* YJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJViewController.m; sourceTree = "<group>"; };
+		393DCFE320C2EBE50048D92D /* YJCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCollectionViewController.h; sourceTree = "<group>"; };
+		393DCFE420C2EBE50048D92D /* YJCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJCollectionViewController.m; sourceTree = "<group>"; };
 		39F392B820C0382400C66FBD /* YJQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F392BB20C0382400C66FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39F392BC20C0382400C66FBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +70,9 @@
 		39F392F620C0415B00C66FBD /* YJNavigationContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNavigationContentViewController.m; sourceTree = "<group>"; };
 		39F392F920C0422C00C66FBD /* YJTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabBarController.h; sourceTree = "<group>"; };
 		39F392FA20C0422C00C66FBD /* YJTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabBarController.m; sourceTree = "<group>"; };
+		43767A75D66AC63B5EAA6B48 /* libPods-YJQQ.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJQQ.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F34A5CCEA4A5FFF86FA837 /* Pods-YJQQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJQQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJQQ/Pods-YJQQ.debug.xcconfig"; sourceTree = "<group>"; };
+		90E264D062D9ECD570CE9DD0 /* Pods-YJQQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJQQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJQQ/Pods-YJQQ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CA42BC0107CD50141374DFE /* libPods-YJQQ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,15 +101,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		393DCFDE20C2EB790048D92D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				393DCFE320C2EBE50048D92D /* YJCollectionViewController.h */,
+				393DCFE420C2EBE50048D92D /* YJCollectionViewController.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		393DCFDF20C2EBB50048D92D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				393DCFE020C2EBCA0048D92D /* YJViewController.h */,
+				393DCFE120C2EBCA0048D92D /* YJViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		39F392AF20C0382400C66FBD = {
 			isa = PBXGroup;
 			children = (
+				393DCFDF20C2EBB50048D92D /* Base */,
+				393DCFDE20C2EB790048D92D /* Menu */,
 				39F392F820C0420D00C66FBD /* TabBar */,
 				39F392F120C03E8900C66FBD /* Navigation */,
 				39F392BA20C0382400C66FBD /* YJQQ */,
 				39F392D320C0382700C66FBD /* YJQQTests */,
 				39F392DE20C0382700C66FBD /* YJQQUITests */,
 				39F392B920C0382400C66FBD /* Products */,
+				BC6B8A44B83B173E7A23039F /* Pods */,
+				C0FC786DA232C75D05507D09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +201,23 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		BC6B8A44B83B173E7A23039F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76F34A5CCEA4A5FFF86FA837 /* Pods-YJQQ.debug.xcconfig */,
+				90E264D062D9ECD570CE9DD0 /* Pods-YJQQ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C0FC786DA232C75D05507D09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43767A75D66AC63B5EAA6B48 /* libPods-YJQQ.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39F392E420C0382700C66FBD /* Build configuration list for PBXNativeTarget "YJQQ" */;
 			buildPhases = (
+				172D64A3A9071B89FE5F29E7 /* [CP] Check Pods Manifest.lock */,
 				39F392B420C0382400C66FBD /* Sources */,
 				39F392B520C0382400C66FBD /* Frameworks */,
 				39F392B620C0382400C66FBD /* Resources */,
@@ -293,6 +344,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		172D64A3A9071B89FE5F29E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YJQQ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39F392B420C0382400C66FBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -305,6 +377,8 @@
 				39F392FB20C0422C00C66FBD /* YJTabBarController.m in Sources */,
 				39F392F020C03A8700C66FBD /* AppDelegate+SideNavigation.m in Sources */,
 				39F392F720C0415B00C66FBD /* YJNavigationContentViewController.m in Sources */,
+				393DCFE220C2EBCA0048D92D /* YJViewController.m in Sources */,
+				393DCFE520C2EBE50048D92D /* YJCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,8 +545,10 @@
 		};
 		39F392E520C0382700C66FBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76F34A5CCEA4A5FFF86FA837 /* Pods-YJQQ.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG84E84LV7;
 				INFOPLIST_FILE = YJQQ/Info.plist;
@@ -488,8 +564,10 @@
 		};
 		39F392E620C0382700C66FBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E264D062D9ECD570CE9DD0 /* Pods-YJQQ.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MG84E84LV7;
 				INFOPLIST_FILE = YJQQ/Info.plist;
