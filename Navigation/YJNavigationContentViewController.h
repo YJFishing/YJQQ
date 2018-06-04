@@ -13,6 +13,7 @@
 
 @interface YJNavigationContentViewController : UIViewController
 
+
 - (YJNavigationContentViewController *)initWithMenuViewController:(SideMenuViewController*)menuViewController rootViewController:(YJTabBarController *)rootViewController;
 
 + (CGFloat)getSpace;

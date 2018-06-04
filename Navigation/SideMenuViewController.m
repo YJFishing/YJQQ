@@ -48,12 +48,13 @@
 
 #pragma mark --UI--
 - (void)setTopView {
+    __weak typeof(self) weakself = self;
     self.topView = [[UIView alloc] init];
     [self.view addSubview:self.topView];
     [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.equalTo(0);
         make.height.equalTo(@200);
-        make.width.equalTo(self.view.mas_width).offset(-[YJNavigationContentViewController getSpace]);
+        make.width.equalTo(weakself.view.mas_width).offset(-[YJNavigationContentViewController getSpace]);
     }];
     
     _bgImageView = [[UIImageView alloc] init];
@@ -72,7 +73,8 @@
     self.bottomView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.bottomView];
     [_bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.bottom.equalTo(0);
+        make.left.bottom.equalTo(0);
+        make.width.mas_equalTo(-[YJNavigationContentViewController getSpace]);
         make.height.equalTo(@49);
     }];
     

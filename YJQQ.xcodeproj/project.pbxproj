@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		392286DF20C5154900A0B4E0 /* YJTabMainBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286DE20C5154900A0B4E0 /* YJTabMainBaseViewController.m */; };
+		392286E220C51D8500A0B4E0 /* YJSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286E120C51D8500A0B4E0 /* YJSearchBar.m */; };
+		392286E920C5223400A0B4E0 /* YJMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286E820C5223400A0B4E0 /* YJMessageViewController.m */; };
+		392286ED20C548FD00A0B4E0 /* YJContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286EC20C548FD00A0B4E0 /* YJContactsViewController.m */; };
+		392286F120C549AB00A0B4E0 /* YJDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286F020C549AB00A0B4E0 /* YJDynamicViewController.m */; };
+		392286F420C54EE400A0B4E0 /* YJMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286F320C54EE400A0B4E0 /* YJMainNavigationController.m */; };
+		392286F720C55A5300A0B4E0 /* YJTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286F620C55A5300A0B4E0 /* YJTabBarView.m */; };
 		393DCFE220C2EBCA0048D92D /* YJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DCFE120C2EBCA0048D92D /* YJViewController.m */; };
 		393DCFE520C2EBE50048D92D /* YJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DCFE420C2EBE50048D92D /* YJCollectionViewController.m */; };
 		39F392BD20C0382400C66FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392BC20C0382400C66FBD /* AppDelegate.m */; };
@@ -42,6 +49,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		392286DD20C5154900A0B4E0 /* YJTabMainBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabMainBaseViewController.h; sourceTree = "<group>"; };
+		392286DE20C5154900A0B4E0 /* YJTabMainBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabMainBaseViewController.m; sourceTree = "<group>"; };
+		392286E020C51D8500A0B4E0 /* YJSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJSearchBar.h; sourceTree = "<group>"; };
+		392286E120C51D8500A0B4E0 /* YJSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJSearchBar.m; sourceTree = "<group>"; };
+		392286E720C5223400A0B4E0 /* YJMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJMessageViewController.h; sourceTree = "<group>"; };
+		392286E820C5223400A0B4E0 /* YJMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJMessageViewController.m; sourceTree = "<group>"; };
+		392286EB20C548FD00A0B4E0 /* YJContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJContactsViewController.h; sourceTree = "<group>"; };
+		392286EC20C548FD00A0B4E0 /* YJContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJContactsViewController.m; sourceTree = "<group>"; };
+		392286EF20C549AB00A0B4E0 /* YJDynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJDynamicViewController.h; sourceTree = "<group>"; };
+		392286F020C549AB00A0B4E0 /* YJDynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJDynamicViewController.m; sourceTree = "<group>"; };
+		392286F220C54EE400A0B4E0 /* YJMainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJMainNavigationController.h; sourceTree = "<group>"; };
+		392286F320C54EE400A0B4E0 /* YJMainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJMainNavigationController.m; sourceTree = "<group>"; };
+		392286F520C55A5300A0B4E0 /* YJTabBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabBarView.h; sourceTree = "<group>"; };
+		392286F620C55A5300A0B4E0 /* YJTabBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabBarView.m; sourceTree = "<group>"; };
 		393DCFE020C2EBCA0048D92D /* YJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJViewController.h; sourceTree = "<group>"; };
 		393DCFE120C2EBCA0048D92D /* YJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJViewController.m; sourceTree = "<group>"; };
 		393DCFE320C2EBE50048D92D /* YJCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCollectionViewController.h; sourceTree = "<group>"; };
@@ -101,6 +122,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		392286E320C5220800A0B4E0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				392286E420C5220800A0B4E0 /* Controller */,
+				392286E520C5220800A0B4E0 /* Model */,
+				392286E620C5220800A0B4E0 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		392286E420C5220800A0B4E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				392286E720C5223400A0B4E0 /* YJMessageViewController.h */,
+				392286E820C5223400A0B4E0 /* YJMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		392286E520C5220800A0B4E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		392286E620C5220800A0B4E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		392286EA20C548CC00A0B4E0 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				392286EB20C548FD00A0B4E0 /* YJContactsViewController.h */,
+				392286EC20C548FD00A0B4E0 /* YJContactsViewController.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		392286EE20C5498A00A0B4E0 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				392286EF20C549AB00A0B4E0 /* YJDynamicViewController.h */,
+				392286F020C549AB00A0B4E0 /* YJDynamicViewController.m */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
 		393DCFDE20C2EB790048D92D /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +187,8 @@
 			children = (
 				393DCFE020C2EBCA0048D92D /* YJViewController.h */,
 				393DCFE120C2EBCA0048D92D /* YJViewController.m */,
+				392286E020C51D8500A0B4E0 /* YJSearchBar.h */,
+				392286E120C51D8500A0B4E0 /* YJSearchBar.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -195,8 +269,17 @@
 		39F392F820C0420D00C66FBD /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				392286EE20C5498A00A0B4E0 /* Dynamic */,
+				392286EA20C548CC00A0B4E0 /* Contacts */,
+				392286E320C5220800A0B4E0 /* Message */,
 				39F392F920C0422C00C66FBD /* YJTabBarController.h */,
 				39F392FA20C0422C00C66FBD /* YJTabBarController.m */,
+				392286DD20C5154900A0B4E0 /* YJTabMainBaseViewController.h */,
+				392286DE20C5154900A0B4E0 /* YJTabMainBaseViewController.m */,
+				392286F220C54EE400A0B4E0 /* YJMainNavigationController.h */,
+				392286F320C54EE400A0B4E0 /* YJMainNavigationController.m */,
+				392286F520C55A5300A0B4E0 /* YJTabBarView.h */,
+				392286F620C55A5300A0B4E0 /* YJTabBarView.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -373,12 +456,19 @@
 				39F392F420C03EA500C66FBD /* SideMenuViewController.m in Sources */,
 				39F392C020C0382400C66FBD /* ViewController.m in Sources */,
 				39F392CB20C0382600C66FBD /* main.m in Sources */,
+				392286F720C55A5300A0B4E0 /* YJTabBarView.m in Sources */,
+				392286E920C5223400A0B4E0 /* YJMessageViewController.m in Sources */,
 				39F392BD20C0382400C66FBD /* AppDelegate.m in Sources */,
 				39F392FB20C0422C00C66FBD /* YJTabBarController.m in Sources */,
 				39F392F020C03A8700C66FBD /* AppDelegate+SideNavigation.m in Sources */,
+				392286ED20C548FD00A0B4E0 /* YJContactsViewController.m in Sources */,
 				39F392F720C0415B00C66FBD /* YJNavigationContentViewController.m in Sources */,
 				393DCFE220C2EBCA0048D92D /* YJViewController.m in Sources */,
+				392286E220C51D8500A0B4E0 /* YJSearchBar.m in Sources */,
 				393DCFE520C2EBE50048D92D /* YJCollectionViewController.m in Sources */,
+				392286F420C54EE400A0B4E0 /* YJMainNavigationController.m in Sources */,
+				392286DF20C5154900A0B4E0 /* YJTabMainBaseViewController.m in Sources */,
+				392286F120C549AB00A0B4E0 /* YJDynamicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
