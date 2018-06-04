@@ -70,7 +70,7 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
             UINavigationController *nav ;
             switch(selectedIndex) {
                 case 0:
-                    nav = self.rootViewController.
+                   
                     break;
                 case 1:
                     

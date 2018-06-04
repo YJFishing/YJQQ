@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol YJTablBarViewDelegate:NSObject
+@protocol YJTablBarViewDelegate<NSObject>
 @end
 
 @interface YJTabBarView : UIView
