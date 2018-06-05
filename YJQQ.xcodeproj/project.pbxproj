@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		392286DF20C5154900A0B4E0 /* YJTabMainBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286DE20C5154900A0B4E0 /* YJTabMainBaseViewController.m */; };
 		392286E220C51D8500A0B4E0 /* YJSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286E120C51D8500A0B4E0 /* YJSearchBar.m */; };
-		392286E920C5223400A0B4E0 /* YJMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286E820C5223400A0B4E0 /* YJMessageViewController.m */; };
 		392286ED20C548FD00A0B4E0 /* YJContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286EC20C548FD00A0B4E0 /* YJContactsViewController.m */; };
 		392286F120C549AB00A0B4E0 /* YJDynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286F020C549AB00A0B4E0 /* YJDynamicViewController.m */; };
 		392286F420C54EE400A0B4E0 /* YJMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286F320C54EE400A0B4E0 /* YJMainNavigationController.m */; };
@@ -28,6 +27,7 @@
 		39F392F420C03EA500C66FBD /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392F320C03EA500C66FBD /* SideMenuViewController.m */; };
 		39F392F720C0415B00C66FBD /* YJNavigationContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392F620C0415B00C66FBD /* YJNavigationContentViewController.m */; };
 		39F392FB20C0422C00C66FBD /* YJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392FA20C0422C00C66FBD /* YJTabBarController.m */; };
+		39F8C33620C657FE0048A5E7 /* YJMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286E820C5223400A0B4E0 /* YJMessageViewController.m */; };
 		5CA42BC0107CD50141374DFE /* libPods-YJQQ.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43767A75D66AC63B5EAA6B48 /* libPods-YJQQ.a */; };
 /* End PBXBuildFile section */
 
@@ -457,7 +457,6 @@
 				39F392C020C0382400C66FBD /* ViewController.m in Sources */,
 				39F392CB20C0382600C66FBD /* main.m in Sources */,
 				392286F720C55A5300A0B4E0 /* YJTabBarView.m in Sources */,
-				392286E920C5223400A0B4E0 /* YJMessageViewController.m in Sources */,
 				39F392BD20C0382400C66FBD /* AppDelegate.m in Sources */,
 				39F392FB20C0422C00C66FBD /* YJTabBarController.m in Sources */,
 				39F392F020C03A8700C66FBD /* AppDelegate+SideNavigation.m in Sources */,
@@ -465,6 +464,7 @@
 				39F392F720C0415B00C66FBD /* YJNavigationContentViewController.m in Sources */,
 				393DCFE220C2EBCA0048D92D /* YJViewController.m in Sources */,
 				392286E220C51D8500A0B4E0 /* YJSearchBar.m in Sources */,
+				39F8C33620C657FE0048A5E7 /* YJMessageViewController.m in Sources */,
 				393DCFE520C2EBE50048D92D /* YJCollectionViewController.m in Sources */,
 				392286F420C54EE400A0B4E0 /* YJMainNavigationController.m in Sources */,
 				392286DF20C5154900A0B4E0 /* YJTabMainBaseViewController.m in Sources */,

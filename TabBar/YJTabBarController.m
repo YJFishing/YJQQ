@@ -7,18 +7,13 @@
 //
 
 #import "YJTabBarController.h"
-#import "YJMessageViewController.h"
-#import "YJContactsViewController.h"
-#import "YJDynamicViewController.h"
 #import "YJMainNavigationController.h"
 #import "YJTabBarView.h"
 #import "Masonry.h"
 
 @interface YJTabBarController ()<YJTablBarViewDelegate>
 
-@property (nonatomic, strong) YJMessageViewController *messageViewController;
-@property (nonatomic,strong) YJContactsViewController *contactMessageController;
-@property (nonatomic, strong) YJDynamicViewController *dynamicViewController;
+
 
 @end
 
