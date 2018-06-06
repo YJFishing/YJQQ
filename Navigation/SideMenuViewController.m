@@ -11,6 +11,7 @@
 #import "YJCollectionViewController.h"
 #import "Masonry.h"
 
+#define  screenWidth ([[UIScreen mainScreen] bounds].size.width)
 @interface SideMenuViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -49,10 +50,10 @@
 #pragma mark --UI--
 - (void)setTopView {
     __weak typeof(self) weakself = self;
-    self.topView = [[UIView alloc] init];
+    self.topView = [[UIView alloc] initWithFrame:CGRectZero];
     [self.view addSubview:self.topView];
     [self.topView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.equalTo(0);
+        make.left.top.mas_equalTo(0);
         make.height.equalTo(@200);
         make.width.equalTo(weakself.view.mas_width).offset(-[YJNavigationContentViewController getSpace]);
     }];
@@ -63,7 +64,8 @@
     _bgImageView.clipsToBounds = YES;
     [self.topView addSubview:_bgImageView];
     [_bgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.left.right.equalTo(self.topView);
+//        make.top.bottom.left.right.equalTo(self.topView);
+        make.edges.equalTo(self.topView);
     }];
 }
 
@@ -73,8 +75,7 @@
     self.bottomView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.bottomView];
     [_bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.equalTo(0);
-        make.width.mas_equalTo(-[YJNavigationContentViewController getSpace]);
+        make.left.bottom.right.mas_equalTo(0);
         make.height.equalTo(@49);
     }];
     
@@ -84,21 +85,13 @@
     [_settingBtn setImage:[UIImage imageNamed:@"sidebar_setting"] forState:UIControlStateNormal];
     [_settingBtn addTarget:self action:@selector(bottomBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.bottomView addSubview:_settingBtn];
-    [_settingBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.top.bottom.equalTo(0);
-        make.width.greaterThanOrEqualTo(0);
-    }];
+    
     self.nightModeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_nightModeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [_nightModeBtn setTitle:@"夜间" forState:UIControlStateNormal];
     [_nightModeBtn setImage:[UIImage imageNamed:@"sidebar_nighymode_off"] forState:UIControlStateNormal];
     [_nightModeBtn addTarget:self action:@selector(bottomNightBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.bottomView addSubview:_nightModeBtn];
-    [_nightModeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.equalTo(0);
-        make.left.equalTo(weakself.settingBtn.mas_right);
-        make.width.equalTo(weakself.settingBtn.mas_width);
-    }];
     
     self.cmShowBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_cmShowBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -106,8 +99,22 @@
     [_cmShowBtn setImage:[UIImage imageNamed:@"sidebar_cmshow"] forState:UIControlStateNormal];
     [_cmShowBtn addTarget:self action:@selector(bottomCmsBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.bottomView addSubview:_cmShowBtn];
+    
+    [_settingBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.bottom.equalTo(weakself.bottomView);
+//        make.width.greaterThanOrEqualTo(0);
+        make.right.lessThanOrEqualTo(weakself.bottomView.mas_right);
+    }];
+    
+    [_nightModeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(weakself.bottomView);
+        make.left.equalTo(weakself.settingBtn.mas_right);
+        make.width.equalTo(weakself.settingBtn.mas_width);
+    }];
+    
+    
     [_cmShowBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.equalTo(0);
+        make.top.bottom.equalTo(weakself.bottomView);
         make.left.equalTo(weakself.nightModeBtn.mas_right);
         make.right.equalTo(weakself.bottomView.mas_right).offset(-[YJNavigationContentViewController getSpace]);
         make.width.equalTo(weakself.settingBtn.mas_width);
@@ -120,10 +127,10 @@
     _tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:_tableView];
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(weakself.view.mas_top);
+        make.left.mas_equalTo(weakself.view.mas_left);
         make.bottom.mas_equalTo(weakself.bottomView.mas_top);
         make.top.mas_equalTo(weakself.topView.mas_bottom).offset(10);
-        make.width.mas_equalTo(weakself.view.mas_width).offset(-[YJNavigationContentViewController getSpace]);
+        make.right.mas_equalTo(weakself.view.mas_right).offset(-[YJNavigationContentViewController getSpace]);
     }];
     _tableView.delegate = self;
     _tableView.dataSource = self;

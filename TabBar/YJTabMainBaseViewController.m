@@ -42,11 +42,12 @@
 }
 
 - (void)setTable {
+    __weak typeof(self) weakself = self;
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     _tableView.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:_tableView];
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.equalTo(0);
+        make.left.right.top.bottom.equalTo(weakself.view);
     }];
     
     _tableView.delegate = self;

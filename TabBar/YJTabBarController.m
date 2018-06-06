@@ -88,10 +88,10 @@
     UINavigationController *messageNav = [[YJMainNavigationController alloc] initWithRootViewController:_messageViewController];
     
     _contactMessageController = [[YJContactsViewController alloc] init];
-    UINavigationController *contactNav = [[YJMainNavigationController alloc] initWithRootViewController:contactNav];
+    UINavigationController *contactNav = [[YJMainNavigationController alloc] initWithRootViewController:_contactMessageController];
     
     _dynamicViewController = [[YJDynamicViewController alloc] init];
-    UINavigationController *dynamicNav = [[YJMainNavigationController alloc] initWithRootViewController:dynamicNav];
+    UINavigationController *dynamicNav = [[YJMainNavigationController alloc] initWithRootViewController:_dynamicViewController];
     
     [self addChildViewController:messageNav];
     [self addChildViewController:contactNav];
@@ -100,9 +100,10 @@
     YJTabBarView *tabBarView = [[YJTabBarView alloc] init];
     tabBarView.delegate = self;
     [self.tabBar addSubview:tabBarView];
-    [tabBarView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(0);
-    }];
+//    [tabBarView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.bottom.left.right.mas_equalTo(0);
+//    }];
+    tabBarView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
 }
 
 #pragma mark --YJTabBarViewDelegate--

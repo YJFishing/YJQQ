@@ -269,4 +269,14 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return self.rootViewController.supportedInterfaceOrientations;
 }
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer == _pan) {
+        BOOL userIsInMain = [_rootViewController isUserInMainView];
+        if (!userIsInMain) {
+            return false;
+        }
+    }
+    return true;
+}
 @end

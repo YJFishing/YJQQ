@@ -15,4 +15,6 @@
 @property (nonatomic, strong) YJMessageViewController *messageViewController;
 @property (nonatomic,strong) YJContactsViewController *contactMessageController;
 @property (nonatomic, strong) YJDynamicViewController *dynamicViewController;
+
+- (BOOL)isUserInMainView;
 @end
