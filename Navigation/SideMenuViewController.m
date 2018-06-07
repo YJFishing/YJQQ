@@ -167,6 +167,6 @@
         YJCollectionViewController *vc = [[YJCollectionViewController alloc] init];
         self.pushVCBlock(vc, YES);
     }
-//    [YJNavigationContentViewController hideMenu:false];
+    [YJNavigationContentViewController hideMenu:false];
 }
 @end

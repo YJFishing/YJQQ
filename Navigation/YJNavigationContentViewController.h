@@ -18,4 +18,6 @@
 
 + (CGFloat)getSpace;
 + (CGFloat)getAlpha;
++ (void)hideMenu:(BOOL)animated;
++ (void)showMenu:(BOOL)animated;
 @end

@@ -96,7 +96,7 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
         pan.delegate = self;
         [self.view addGestureRecognizer:pan];
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideMenuTap:) name:YJSideMenuShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getHideMenu:) name:YJSideMenuHideNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getShowMenu:) name:YJSideMenuShowNotification object:nil];
     }
     return self;
@@ -121,7 +121,7 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
         CGFloat duration = [self getAnimationDuration:false];
         [UIView animateWithDuration:duration animations:^{
             CGRect menuViewFrame = menuView.frame;
-            menuViewFrame.origin.x = [YJNavigationContentViewController getSpace] - screenWidth;
+            menuViewFrame.origin.x = ([YJNavigationContentViewController getSpace] - screenWidth) / 2.0;
             menuView.frame = menuViewFrame;
             
             CGRect rootViewFrame = rootView.frame;
@@ -132,7 +132,7 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
         } completion:nil];
     }else {
         CGRect menuViewFrame = menuView.frame;
-        menuViewFrame.origin.x = [YJNavigationContentViewController getSpace] - screenWidth;
+        menuViewFrame.origin.x = ([YJNavigationContentViewController getSpace] - screenWidth) / 2.0;
         menuView.frame = menuViewFrame;
         
         CGRect rootViewFrame = rootView.frame;
@@ -143,6 +143,18 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
     }
 }
 
++ (void)showMenu:(BOOL)animated {
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [dic setObject:[NSNumber numberWithBool:animated] forKey:YJSideMenuNotificationAnimatedKey];
+    [[NSNotificationCenter defaultCenter] postNotificationName:YJSideMenuShowNotification object:nil userInfo:dic];
+}
+
++ (void)hideMenu:(BOOL)animated {
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    [dic setObject:[NSNumber numberWithBool:animated] forKey:YJSideMenuNotificationAnimatedKey];
+    [[NSNotificationCenter defaultCenter] postNotificationName:YJSideMenuHideNotification object:nil userInfo:dic];
+}
+
 - (CGFloat)getAnimationDuration:(BOOL)isShownDuration {
     CGFloat allDuration = 0.2;
     CGFloat distance = 0;
@@ -151,7 +163,7 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
     }else {
         distance = self.rootViewController.view.frame.origin.x;
     }
-    return allDuration / (distance / [self getDistance]);
+    return allDuration / (CGFloat)(distance / [self getDistance]);
 }
 
 - (void)edgePanGesture:(UIPanGestureRecognizer *)edgePan {
@@ -159,7 +171,7 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
     UIView *menuView = self.menuController.view;
     
     if (edgePan.state == UIGestureRecognizerStateBegan) {
-        CGFloat startPointX = [edgePan locationInView:rootView].x;
+        CGFloat startPointX = [edgePan locationInView:self.view].x;
         self.pan_start_x = startPointX;
     }
     
@@ -237,13 +249,15 @@ static NSString *YJSideMenuNotificationAnimatedKey = @"YJSideMenuNotificationAni
 #pragma mark 外部调用显示/隐藏菜单
 - (void)getShowMenu:(NSNotification *)notification {
     NSDictionary *dic = [notification userInfo];
-    BOOL animated = [dic valueForKey:YJSideMenuNotificationAnimatedKey];
+    NSNumber *boolNum = [dic valueForKey:YJSideMenuNotificationAnimatedKey];
+    BOOL animated = [boolNum boolValue];
     [self hideMenu:animated];
 }
 
 - (void)getHideMenu:(NSNotification *)notification {
     NSDictionary *dic = [notification userInfo];
-    BOOL animated = [dic objectForKey:YJSideMenuNotificationAnimatedKey];
+    NSNumber *boolNum = [dic valueForKey:YJSideMenuNotificationAnimatedKey];
+    BOOL animated = [boolNum boolValue];
     [self hideMenu:animated];
 }
 

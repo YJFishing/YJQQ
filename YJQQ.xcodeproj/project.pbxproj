@@ -15,6 +15,8 @@
 		392286F720C55A5300A0B4E0 /* YJTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 392286F620C55A5300A0B4E0 /* YJTabBarView.m */; };
 		393DCFE220C2EBCA0048D92D /* YJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DCFE120C2EBCA0048D92D /* YJViewController.m */; };
 		393DCFE520C2EBE50048D92D /* YJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DCFE420C2EBE50048D92D /* YJCollectionViewController.m */; };
+		394419FA20C8E93300402F4C /* NSDictionary+ReadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 394419F920C8E93300402F4C /* NSDictionary+ReadData.m */; };
+		39441A0120C92BA600402F4C /* NSNumber+DateFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 394419FF20C90BC800402F4C /* NSNumber+DateFormater.m */; };
 		39F392BD20C0382400C66FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392BC20C0382400C66FBD /* AppDelegate.m */; };
 		39F392C020C0382400C66FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392BF20C0382400C66FBD /* ViewController.m */; };
 		39F392C320C0382500C66FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F392C120C0382500C66FBD /* Main.storyboard */; };
@@ -67,6 +69,10 @@
 		393DCFE120C2EBCA0048D92D /* YJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJViewController.m; sourceTree = "<group>"; };
 		393DCFE320C2EBE50048D92D /* YJCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJCollectionViewController.h; sourceTree = "<group>"; };
 		393DCFE420C2EBE50048D92D /* YJCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJCollectionViewController.m; sourceTree = "<group>"; };
+		394419F820C8E93300402F4C /* NSDictionary+ReadData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ReadData.h"; sourceTree = "<group>"; };
+		394419F920C8E93300402F4C /* NSDictionary+ReadData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ReadData.m"; sourceTree = "<group>"; };
+		394419FE20C90BC800402F4C /* NSNumber+DateFormater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+DateFormater.h"; sourceTree = "<group>"; };
+		394419FF20C90BC800402F4C /* NSNumber+DateFormater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+DateFormater.m"; sourceTree = "<group>"; };
 		39F392B820C0382400C66FBD /* YJQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F392BB20C0382400C66FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39F392BC20C0382400C66FBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -193,9 +199,21 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		394419F620C8E86900402F4C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				394419F820C8E93300402F4C /* NSDictionary+ReadData.h */,
+				394419F920C8E93300402F4C /* NSDictionary+ReadData.m */,
+				394419FE20C90BC800402F4C /* NSNumber+DateFormater.h */,
+				394419FF20C90BC800402F4C /* NSNumber+DateFormater.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		39F392AF20C0382400C66FBD = {
 			isa = PBXGroup;
 			children = (
+				394419F620C8E86900402F4C /* Extension */,
 				393DCFDF20C2EBB50048D92D /* Base */,
 				393DCFDE20C2EB790048D92D /* Menu */,
 				39F392F820C0420D00C66FBD /* TabBar */,
@@ -455,6 +473,8 @@
 			files = (
 				39F392F420C03EA500C66FBD /* SideMenuViewController.m in Sources */,
 				39F392C020C0382400C66FBD /* ViewController.m in Sources */,
+				394419FA20C8E93300402F4C /* NSDictionary+ReadData.m in Sources */,
+				39441A0120C92BA600402F4C /* NSNumber+DateFormater.m in Sources */,
 				39F392CB20C0382600C66FBD /* main.m in Sources */,
 				392286F720C55A5300A0B4E0 /* YJTabBarView.m in Sources */,
 				39F392BD20C0382400C66FBD /* AppDelegate.m in Sources */,
