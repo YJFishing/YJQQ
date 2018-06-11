@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class YJTabBarView;
 @protocol YJTablBarViewDelegate<NSObject>
+
+- (BOOL)YJTabBar:(YJTabBarView *)tabbar shoudSelectItemAtIndex:(int)index;
+- (void)YJTabBar:(YJTabBarView *)tabbar didSelectItemAtIndex:(int)index;
+- (void)YJTabBar:(YJTabBarView *)tabbar shouldClearUnreadCountAtIndex:(int)index;
+
 @end
 
 @interface YJTabBarView : UIView

@@ -17,6 +17,9 @@
 		393DCFE520C2EBE50048D92D /* YJCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DCFE420C2EBE50048D92D /* YJCollectionViewController.m */; };
 		394419FA20C8E93300402F4C /* NSDictionary+ReadData.m in Sources */ = {isa = PBXBuildFile; fileRef = 394419F920C8E93300402F4C /* NSDictionary+ReadData.m */; };
 		39441A0120C92BA600402F4C /* NSNumber+DateFormater.m in Sources */ = {isa = PBXBuildFile; fileRef = 394419FF20C90BC800402F4C /* NSNumber+DateFormater.m */; };
+		39C6327520CB67F40074F58A /* BadgeBoom.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C6327420CB67F40074F58A /* BadgeBoom.xcassets */; };
+		39C6327820CB697E0074F58A /* YJTabBarItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C6327720CB697E0074F58A /* YJTabBarItemView.m */; };
+		39C6327B20CB70E40074F58A /* YJBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C6327A20CB70E40074F58A /* YJBadgeLabel.m */; };
 		39F392BD20C0382400C66FBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392BC20C0382400C66FBD /* AppDelegate.m */; };
 		39F392C020C0382400C66FBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F392BF20C0382400C66FBD /* ViewController.m */; };
 		39F392C320C0382500C66FBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F392C120C0382500C66FBD /* Main.storyboard */; };
@@ -73,6 +76,11 @@
 		394419F920C8E93300402F4C /* NSDictionary+ReadData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ReadData.m"; sourceTree = "<group>"; };
 		394419FE20C90BC800402F4C /* NSNumber+DateFormater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+DateFormater.h"; sourceTree = "<group>"; };
 		394419FF20C90BC800402F4C /* NSNumber+DateFormater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+DateFormater.m"; sourceTree = "<group>"; };
+		39C6327420CB67F40074F58A /* BadgeBoom.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BadgeBoom.xcassets; sourceTree = "<group>"; };
+		39C6327620CB697E0074F58A /* YJTabBarItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJTabBarItemView.h; sourceTree = "<group>"; };
+		39C6327720CB697E0074F58A /* YJTabBarItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJTabBarItemView.m; sourceTree = "<group>"; };
+		39C6327920CB70E40074F58A /* YJBadgeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJBadgeLabel.h; sourceTree = "<group>"; };
+		39C6327A20CB70E40074F58A /* YJBadgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJBadgeLabel.m; sourceTree = "<group>"; };
 		39F392B820C0382400C66FBD /* YJQQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJQQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F392BB20C0382400C66FBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39F392BC20C0382400C66FBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -287,6 +295,7 @@
 		39F392F820C0420D00C66FBD /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				39C6327420CB67F40074F58A /* BadgeBoom.xcassets */,
 				392286EE20C5498A00A0B4E0 /* Dynamic */,
 				392286EA20C548CC00A0B4E0 /* Contacts */,
 				392286E320C5220800A0B4E0 /* Message */,
@@ -298,6 +307,10 @@
 				392286F320C54EE400A0B4E0 /* YJMainNavigationController.m */,
 				392286F520C55A5300A0B4E0 /* YJTabBarView.h */,
 				392286F620C55A5300A0B4E0 /* YJTabBarView.m */,
+				39C6327620CB697E0074F58A /* YJTabBarItemView.h */,
+				39C6327720CB697E0074F58A /* YJTabBarItemView.m */,
+				39C6327920CB70E40074F58A /* YJBadgeLabel.h */,
+				39C6327A20CB70E40074F58A /* YJBadgeLabel.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -425,6 +438,7 @@
 			files = (
 				39F392C820C0382600C66FBD /* LaunchScreen.storyboard in Resources */,
 				39F392C520C0382600C66FBD /* Assets.xcassets in Resources */,
+				39C6327520CB67F40074F58A /* BadgeBoom.xcassets in Resources */,
 				39F392C320C0382500C66FBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +495,7 @@
 				39F392FB20C0422C00C66FBD /* YJTabBarController.m in Sources */,
 				39F392F020C03A8700C66FBD /* AppDelegate+SideNavigation.m in Sources */,
 				392286ED20C548FD00A0B4E0 /* YJContactsViewController.m in Sources */,
+				39C6327820CB697E0074F58A /* YJTabBarItemView.m in Sources */,
 				39F392F720C0415B00C66FBD /* YJNavigationContentViewController.m in Sources */,
 				393DCFE220C2EBCA0048D92D /* YJViewController.m in Sources */,
 				392286E220C51D8500A0B4E0 /* YJSearchBar.m in Sources */,
@@ -489,6 +504,7 @@
 				392286F420C54EE400A0B4E0 /* YJMainNavigationController.m in Sources */,
 				392286DF20C5154900A0B4E0 /* YJTabMainBaseViewController.m in Sources */,
 				392286F120C549AB00A0B4E0 /* YJDynamicViewController.m in Sources */,
+				39C6327B20CB70E40074F58A /* YJBadgeLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
