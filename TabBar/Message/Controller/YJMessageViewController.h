@@ -7,7 +7,10 @@
 //
 
 #import "YJTabMainBaseViewController.h"
+#import "YJMessageListModel.h"
 
 @interface YJMessageViewController : YJTabMainBaseViewController
+
+
 
 @end
